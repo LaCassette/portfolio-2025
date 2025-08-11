@@ -1,0 +1,190 @@
+{
+  "name": "cassette.work",
+  "menu": [
+    {
+      "label": "Accueil 🏠",
+      "href": "/"
+    },
+    {
+      "label": "À Propos 👨‍💻",
+      "href": "/about"
+    },
+    {
+      "label": "Contact 📬",
+      "href": "/contact"
+    }
+  ],
+  "button": {
+    "label": "Wishlist 🎁",
+    "href": "https://www.amazon.fr/hz/wishlist/ls/WU9VVS35AN3A?ref_=wl_share"
+  },
+  "hero": {
+    "title": "Bonjour ! 👋",
+    "name": "Je suis Théo S.",
+    "description": "Développeur Full-Stack qui transforme les idées en expériences numériques extraordinaires ✨",
+    "magicText": {
+      "prefix": "Je crée des ",
+      "words": ["landing pages", "applications web", "fonctionnalités IA", "application SaaS", "solutions innovantes", "expériences utilisateur", "projets sur mesure", "interfaces élégantes"],
+      "suffix": " qui marquent les esprits 🚀"
+    },
+    "cta": {
+      "primary": {
+        "label": "Découvrir mon profil 👨‍💻",
+        "href": "/about"
+      },
+      "secondary": {
+        "label": "Me contacter 📬",
+        "href": "/contact"
+      }
+    },
+    "subtitle": "Explorez mon univers créatif et technique 🚀🎨"
+  },
+  "profile": {
+    "name": "Théo S. - alias Cassette",
+    "bio": "Développeur Full-Stack passionné par les technologies modernes. 💻 Créateur d'expériences numériques innovantes et amateur de photographie. 📸✨",
+    "image": "/IMG_4717.jpg",
+    "socialLinks": {
+      "instagram": [
+        {
+          "name": "Personnel",
+          "url": "https://instagram.com/la_k7.exe"
+        },
+        {
+          "name": "Athlet.IA",
+          "url": "https://instagram.com/athletia.fit"
+        },
+        {
+          "name": "Fin - Financial Insight Now",
+          "url": "https://instagram.com/financial_insight_now"
+        }
+      ],
+      "linkedin": {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/cassette"
+      },
+      "github": [
+        {
+          "name": "Compte Principal",
+          "url": "https://github.com/LaCassette"
+        },
+        {
+          "name": "2021 - 2023",
+          "url": "https://github.com/k7x667"
+        },
+        {
+          "name": "Student 1ere année",
+          "url": "https://github.com/onk0611"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "Projects & Experiences 🚀💼",
+    "description": "Découvrez mes expériences professionnelles et projets personnels ✨",
+    "filters": {
+      "all": "Tous 🌟",
+      "student": "Étudiant 🎓",
+      "personal": "Personnel 💡",
+      "professional": "Professionnel 💼",
+      "freelance": "Freelance 🚀"
+    },
+    "items": [
+      {
+        "id": "0",
+        "title": "Développeur Full-Stack Next.JS ⚛️",
+        "company": "Agentova.IA 🤖",
+        "type": "freelance",
+        "description": "Développement d'un SaaS d'agent IA aidant les entreprises à gérer et booster leur croissance grâce à l'intelligence artificielle. 🚀💼 Création d'interfaces modernes et intégration d'API IA avancées."
+      },
+      {
+        "id": "2",
+        "title": "CTO & Développeur Full-Stack 🎯",
+        "company": "Athlet.IA 🤖",
+        "type": "freelance",
+        "description": "Direction technique et développement d'une application mobile de coaching sportif personnalisé avec intelligence artificielle. 📱🏋️‍♂️ Gestion d'équipe et architecture de solutions innovantes."
+      },
+      {
+        "id": "3",
+        "title": "Stage Développeur Full-Stack 🎓",
+        "company": "Ramzi B. - Indépendant 👨‍💼",
+        "type": "student",
+        "description": "Développement d'une solution SaaS complète avec architecture backend robuste, API REST sécurisées et interface utilisateur moderne. ☁️💻 Intégration de technologies cloud."
+      },
+      {
+        "id": "4",
+        "title": "Développeur Front-end Spécialisé 🎨",
+        "company": "Hubiquiti 🌐",
+        "type": "freelance",
+        "description": "Création d'un dashboard de gestion IoT avec Next.js, TypeScript et shadCN/UI. 📊⚡ Développement d'interfaces utilisateur intuitives pour la supervision d'objets connectés."
+      },
+      {
+        "id": "5",
+        "title": "Concepteur Développeur d'Applications 🏗️",
+        "company": "Campus26 🎓",
+        "type": "student",
+        "description": "Formation spécialisée en architecture logicielle et développement d'applications complexes. 🏛️⚡ Maîtrise des design patterns et méthodologies agiles - Titre RNCP Niveau 6."
+      },
+      {
+        "id": "6",
+        "title": "Développeur Back-end ⚙️",
+        "company": "Subskill - Paris 🗼",
+        "type": "professional",
+        "description": "Développement backend pour sites vitrines, plateformes e-commerce et applications web de grands groupes. 🛡️⚡ Optimisation des performances et sécurisation des données."
+      },
+      {
+        "id": "7",
+        "title": "Développeur Indépendant 🚀",
+        "company": "Auto-Entrepreneur 💼",
+        "type": "freelance",
+        "description": "Création de sites web sur mesure, applications mobiles cross-platform et solutions e-commerce pour PME et startups. 🌟📱 Accompagnement technique complet des projets."
+      },
+      {
+        "id": "8",
+        "title": "Technicien Support Informatique 🔧",
+        "company": "Nexter KNDS - Satory 🛡️",
+        "type": "professional",
+        "description": "Support technique et maintenance informatique pour une entreprise de défense. 🚨💻 Gestion des incidents, déploiement de solutions et formation des utilisateurs."
+      },
+      {
+        "id": "9",
+        "title": "Développeur Web & Mobile 📱",
+        "company": "Campus26 🎓",
+        "type": "student",
+        "description": "Formation fondamentale en technologies web modernes et développement mobile. 🌐💻 Apprentissage des langages front-end, back-end et frameworks mobiles - Titre RNCP Niveau 5."
+      },
+      {
+        "id": "10",
+        "title": "Créateur & Développeur 🃏",
+        "company": "Magikard 📱",
+        "type": "personal",
+        "description": "Création d'un système innovant permettant aux entreprises de faciliter la récolte d'avis clients grâce à des cartes NFC personnalisées. 💳✨ Intégration de QR codes et personnalisation avec le nom d'entreprise pour une expérience utilisateur optimale."
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "Hobbies & Passions 🎨🔥",
+    "items": [
+              {
+          "id": "1",
+          "name": "📈 Finance - FX & Crypto",
+          "since": "2018",
+          "shortDescription": "Suivi de la crypto et des marchés financiers",
+          "longDescription": "# Finance - FX & Crypto\n\nPassionné par les marchés financiers depuis 2018, je suis l'évolution des cryptomonnaies et du trading FX.\n\n## Domaines d'intérêt\n- **Cryptomonnaies** : Bitcoin, Ethereum, DeFi et altcoins\n- **Forex** : Trading de devises et analyse technique\n- **Analyse fondamentale** : Étude des facteurs économiques\n- **Technologies blockchain** : Smart contracts et innovations\n\n## Outils et plateformes\n- TradingView pour l'analyse technique\n- MT5 & FPMarket pour le trading\n- CoinMarketCap pour suivre l'écosystème DeFi\n\n*\"Les marchés sont un terrain de jeu passionnant où technologie et économie se rencontrent\"*"
+        },
+              {
+          "id": "2",
+          "name": "💻 Informatique",
+          "since": "2011",
+          "shortDescription": "Omnipraticien de la tech, j'aime apprendre et partager mes connaissances",
+          "longDescription": "# Informatique\n\nPassionné d'informatique depuis 2011, je suis un véritable omnipraticien de la technologie qui aime explorer, apprendre et partager.\n\n## Domaines d'expertise\n- **Développement** : Full-stack, mobile, web\n- **DevOps** : CI/CD, conteneurisation, cloud\n- **Sécurité** : Cybersécurité, audit, pentesting\n- **Hardware** : Montage PC, serveurs, réseaux\n- **IA & Data** : Machine learning, data science\n\n## Philosophie\n- Veille technologique constante\n- Partage de connaissances\n- Open source et communauté\n- Formation et mentorat\n\n## Technologies maîtrisées\n- **Frontend** : React, Next.js, TypeScript\n- **Backend** : Node.js, Python, PostgreSQL\n- **Mobile** : React Native\n- **Cloud** : AWS, Docker, Kubernetes\n- **IA** : Machine Learning, Prompt Engineer, LLM Local\n\n> *\"L'informatique n'est pas qu'un métier, c'est un art de vivre et de créer\"*"
+        }, 
+              {
+          "id": "3",
+          "name": "💪 Sport",
+          "since": "2025",
+          "shortDescription": "J'ai repris récemment le sport et je suis passionné par la musculation",
+          "longDescription": "# Sport & Musculation\n\nNouvelle passion de 2025, j'ai récemment repris le sport avec un focus particulier sur la musculation et le développement physique.\n\n## Objectifs actuels\n- **Musculation** : Développement de la masse musculaire\n- **Condition physique** : Amélioration de l'endurance\n- **Bien-être** : Équilibre mental et physique\n- **Discipline** : Routine d'entraînement régulière\n\n## Programme d'entraînement\n- Push/Pull/Legs split\n- Exercices composés (squat, deadlift, bench press)\n- Cardio pour la condition physique\n- Stretching et mobilité\n\n## Philosophie\n- Progression constante\n- Consistance avant intensité\n- Écoute du corps\n- Nutrition adaptée\n\n*\"Un esprit sain dans un corps sain - la tech et le sport se complètent parfaitement\"*"
+        }
+    ]
+  }
+}
