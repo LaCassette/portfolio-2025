@@ -32,12 +32,12 @@ const About = () => {
     : projects.items.filter(project => project.type === selectedFilter);
 
   return (
-    <div className="min-h-screen p-4">
-      <div className="max-w-4xl mx-auto space-y-8">
+    <div className="min-h-screen p-2 sm:p-4">
+      <div className="max-w-4xl mx-auto space-y-4 sm:space-y-8">
         
         {/* Section Profil */}
-        <div className="border rounded-lg p-8">
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+        <div className="border rounded-lg p-4 sm:p-8">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-4 sm:gap-8">
             
             {/* Photo de profil avec Scratch to Reveal */}
             <div className="flex-shrink-0">
@@ -59,22 +59,22 @@ const About = () => {
               />
                 </div>
               </ScratchToReveal>
-              <span className="text-sm text-muted-foreground mt-6">
+              <span className="text-xs sm:text-sm text-muted-foreground mt-2 sm:mt-6 text-center">
                 Scratch up to Reveal me
               </span>
             </div>
 
             {/* Informations profil */}
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-3xl font-bold mb-2">
+              <h1 className="text-2xl sm:text-3xl font-bold mb-2">
                 {profile.name}
               </h1>
-              <p className="text-muted-foreground mb-6 max-w-md">
+              <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 max-w-md">
                 {profile.bio}
               </p>
 
               {/* Boutons sociaux */}
-              <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+              <div className="flex flex-wrap gap-2 sm:gap-3 justify-center md:justify-start">
                 
                 {/* Instagram avec sous-menus */}
                 <DropdownMenu>
@@ -132,19 +132,20 @@ const About = () => {
         </div>
 
         {/* Section Projets */}
-        <div className="border rounded-lg p-8">
-          <h1 className="text-4xl font-bold mb-4">{projects.title}</h1>
-          <p className="text-muted-foreground mb-8">
+        <div className="border rounded-lg p-4 sm:p-8">
+          <h1 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4">{projects.title}</h1>
+          <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8">
             {projects.description}
           </p>
 
-          <Separator className="mb-8" />
+          <Separator className="mb-6 sm:mb-8" />
 
           {/* Filtres */}
-          <div className="flex flex-wrap gap-2 mb-8">
+          <div className="flex flex-wrap gap-1 sm:gap-2 mb-6 sm:mb-8">
             <Button
               variant={selectedFilter === "all" ? "default" : "outline"}
               size="sm"
+              className="text-xs sm:text-sm px-2 sm:px-3"
               onClick={() => setSelectedFilter("all")}
             >
               {projects.filters.all}
@@ -154,6 +155,7 @@ const About = () => {
                 key={type}
                 variant={selectedFilter === type ? "default" : "outline"}
                 size="sm"
+                className="text-xs sm:text-sm px-2 sm:px-3"
                 onClick={() => setSelectedFilter(type as ProjectType)}
               >
                 {label}
@@ -162,22 +164,22 @@ const About = () => {
           </div>
 
           {/* Liste des projets */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {filteredProjects.map((project) => (
-              <div key={project.id} className="border-l-4 border-border pl-6">
-                <div className="flex items-start justify-between">
+              <div key={project.id} className="border-l-4 border-border pl-3 sm:pl-6">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:justify-between">
                   <div className="flex-1">
-                    <h3 className="font-semibold mb-1">
+                    <h3 className="font-semibold mb-1 text-sm sm:text-base">
                       {project.title}
                     </h3>
-                    <p className="text-muted-foreground mb-2">
+                    <p className="text-muted-foreground mb-1 sm:mb-2 text-xs sm:text-sm">
                       {project.company}
                     </p>
-                    <p className="text-muted-foreground text-sm mb-3">
+                    <p className="text-muted-foreground text-xs sm:text-sm mb-2 sm:mb-3">
                       {project.description}
                     </p>
                   </div>
-                  <Badge variant={badgeVariants[project.type as ProjectType]}>
+                  <Badge variant={badgeVariants[project.type as ProjectType]} className="text-xs w-fit">
                     {projects.filters[project.type as keyof typeof projects.filters]}
                   </Badge>
                 </div>
@@ -189,10 +191,10 @@ const About = () => {
         <Separator />
 
         {/* Section Hobbies */}
-        <div className="border rounded-lg p-8">
-          <h2 className="text-2xl font-bold mb-8">{hobbies.title}</h2>
+        <div className="border rounded-lg p-4 sm:p-8">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-8">{hobbies.title}</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
             {hobbies.items.map((hobby) => (
               <Dialog key={hobby.id}>
                 <DialogTrigger asChild>

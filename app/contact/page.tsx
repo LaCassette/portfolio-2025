@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { Mail, Phone, Instagram, Linkedin, Github, ExternalLink, MapPin, Shield, CheckCircle } from "lucide-react";
+import { Mail, Phone, Instagram, Linkedin, Github, ExternalLink, MapPin, Shield, CheckCircle, Briefcase } from "lucide-react";
 import data from "@/data/index.json";
 
 // Types pour les éléments de bruit du captcha
@@ -225,13 +225,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen p-4">
-      <div className="max-w-2xl mx-auto space-y-8">
+    <div className="min-h-screen p-2 sm:p-4">
+      <div className="max-w-2xl mx-auto space-y-4 sm:space-y-8">
         
         {/* En-tête */}
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold">Me contacter 📬</h1>
-          <p className="text-muted-foreground text-lg">
+        <div className="text-center space-y-2 sm:space-y-4 px-2">
+          <h1 className="text-2xl sm:text-4xl font-bold">Me contacter 📬</h1>
+          <p className="text-muted-foreground text-sm sm:text-lg">
             N&apos;hésitez pas à me contacter pour discuter de vos projets ou simplement échanger ! ✨
           </p>
         </div>
@@ -239,34 +239,34 @@ const Contact = () => {
         <Separator />
 
         {/* Informations de contact */}
-        <div className="grid gap-6">
+        <div className="grid gap-3 sm:gap-6">
           
           {/* Email avec Captcha */}
           <Card className="hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-blue-500" />
+            <CardHeader className="pb-3 sm:pb-6">
+              <CardTitle className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base">
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-blue-500" />
                 Email
-                {emailUnlocked && <CheckCircle className="w-4 h-4 text-green-500" />}
+                {emailUnlocked && <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-green-500" />}
               </CardTitle>
-              <CardDescription>
+              <CardDescription className="text-xs sm:text-sm">
                 Pour toute demande professionnelle ou collaboration
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-3 sm:space-y-4">
               {!emailUnlocked ? (
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Shield className="w-4 h-4" />
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                    <Shield className="w-3 h-3 sm:w-4 sm:h-4" />
                     Résolvez ce captcha débile pour accéder à mon email 🤓
                   </div>
                   
                   <form onSubmit={handleCaptchaSubmit} className="space-y-3">
-                    <div className="flex items-center gap-3">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                       {isClient ? (
-                        <div className="relative bg-muted px-4 py-3 rounded border-2 border-dashed border-muted-foreground/30 overflow-hidden">
+                        <div className="relative bg-muted px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-dashed border-muted-foreground/30 overflow-hidden w-full sm:w-auto">
                           <div 
-                            className="text-lg font-mono font-bold text-foreground select-none"
+                            className="text-sm sm:text-lg font-mono font-bold text-foreground select-none text-center sm:text-left"
                             style={captchaStyles}
                           >
                             {captchaQuestion.questionText} = ?
@@ -336,9 +336,9 @@ const Contact = () => {
                     Bravo ! Vous n&apos;êtes pas un robot 🎉
                   </div>
                   <Button variant="outline" className="w-full" asChild>
-                    <a href="mailto:contact@cassette.work">
+                    <a href="mailto:hello@cassette.work">
                       <Mail className="w-4 h-4 mr-2" />
-                      contact@cassette.work
+                      hello@cassette.work
                     </a>
                   </Button>
                 </div>
@@ -369,9 +369,9 @@ const Contact = () => {
                   <form onSubmit={handlePhoneCaptchaSubmit} className="space-y-3">
                     <div className="flex items-center gap-3">
                       {isClient ? (
-                        <div className="relative bg-muted px-4 py-3 rounded border-2 border-dashed border-muted-foreground/30 overflow-hidden">
+                        <div className="relative bg-muted px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-dashed border-muted-foreground/30 overflow-hidden w-full sm:w-auto">
                           <div 
-                            className="text-lg font-mono font-bold text-foreground select-none"
+                            className="text-sm sm:text-lg font-mono font-bold text-foreground select-none text-center sm:text-left"
                             style={phoneCaptchaStyles}
                           >
                             {phoneCaptchaQuestion.questionText} = ?
@@ -441,7 +441,7 @@ const Contact = () => {
                     Excellent ! Vous méritez mon numéro 📞✨
                   </div>
                   <Button variant="outline" className="w-full" asChild>
-                    <a href="tel:+33612345678">
+                    <a href="tel:+33767367982">
                       <Phone className="w-4 h-4 mr-2" />
                       +33 7 67 36 79 82
                     </a>
@@ -464,7 +464,7 @@ const Contact = () => {
             </CardHeader>
             <CardContent>
               <div className="text-muted-foreground">
-                📍 Paris, France & Remote
+                📍 Worldwide 🌍 (Remote only)
               </div>
             </CardContent>
           </Card>
@@ -563,9 +563,9 @@ const Contact = () => {
             Je suis toujours ouvert aux nouveaux projets et collaborations intéressantes.
           </p>
           <Button size="lg" asChild>
-            <a href="mailto:contact@cassette.work">
-              <Mail className="w-4 h-4 mr-2" />
-              Envoyez-moi un message
+            <a href="/about">
+              <Briefcase className="w-4 h-4 mr-2" />
+              Revoir mes projets
             </a>
           </Button>
         </div>
